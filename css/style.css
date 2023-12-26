@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    background-image: url(../img/rabstol_net_new_year_139.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.celebration__img-wrap {
+    display: inline-block;
+    width: 200px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid red;
+}
+
+.celebration__img {
+    height: 100%;
+    width: 100%;
+}
+
+.celebration__img:hover {
+    animation: santa infinite 1s alternate backwards ease;
+}
+
+
+
+@keyframes santa {
+    0% {
+        transform: scale(0);
+    }
+
+
+    100% {
+        transform: scale(0.5);
+        transform: rotate(90deg);
+        transform: translateY(0vw);
+    }
+}
+
+.celebration__content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    color: white;
+    background-color: rgb(22, 5, 97);
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 20px 50px;
+}
+
+.celebration__title {
+    animation: runleft 5s infinite alternate;
+}
+
+.btn-block {
+    width: 100%;
+
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+.btn {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: rgb(244, 217, 217);
+    padding: 10px 20px;
+    background-color: rgb(147, 19, 19);
+    border: 1px solid rgb(9, 215, 9);
+    border-radius: 10px;
+}
+
+.btn:hover {
+    color: aqua;
+    background-color: black;
+    border-color: blueviolet;
+    border: solid;
+}
+
+
+@keyframes runleft {
+    0% {
+        transform: scale(0);
+        transform: translateX(-4.5vw);
+        transform: translateY(-3vw);
+    }
+
+    25% {
+        transform: translateY(5vw);
+        transform: translateX(4.5vw) scale(0.75)
+    }
+
+
+
+    100% {
+        transform: translateY(-3vw);
+        transform: translateX(-1vw)
+    }
+}
